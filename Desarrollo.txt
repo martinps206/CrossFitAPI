@@ -1,0 +1,7 @@
+Crearemos una API REST para una aplicación de entrenamiento de CrossFit.
+
+Arquitectura de 3 capas:
+
+Dentro del controlador manejaremos todo lo relacionado con HTTP. Eso significa que estamos tratando con solicitudes y respuestas para nuestros puntos finales. Por encima de esa capa también hay un pequeño enrutador de Express que pasa las solicitudes al controlador correspondiente.
+Toda la lógica comercial estará en la capa de servicio que exporta ciertos servicios (métodos) que utiliza el controlador.
+La tercera capa es la capa de acceso a datos donde trabajaremos con nuestra base de datos.
